@@ -6,13 +6,12 @@ public class Book {
     boolean isCheckedOut;
     String checkedOutTo;
 
-    static String[] Books = {"Book1", "Book2", "Book3", "Book4", "Book5"};
 
-    public Book(int id, String isbn, String title, boolean isCheckcedOut, String checkedOutTo) {
+    public Book(int id, String isbn, String title, boolean isCheckedOut, String checkedOutTo) {
         this.id = id;
         this.isbn = isbn;
         this.title = title;
-        this.isCheckedOut = isCheckcedOut;
+        this.isCheckedOut = isCheckedOut;
         this.checkedOutTo = checkedOutTo;
     }
 
