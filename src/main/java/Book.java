@@ -1,10 +1,10 @@
 public class Book {
 
+    static boolean isCheckedOut;
+    static String checkedOutTo;
     int id;
     String isbn;
     String title;
-    boolean isCheckedOut;
-    String checkedOutTo;
 
 
     public Book(int id, String isbn, String title, boolean isCheckedOut, String checkedOutTo) {
@@ -15,26 +15,27 @@ public class Book {
         this.checkedOutTo = checkedOutTo;
     }
 
-    public void checkOut(String name)
-    {
+    public static String getTitle(String title) {
+        return title;
+    }
 
-                checkedOutTo = name;
-                isCheckedOut = true;
+    public void checkOut(String name) {
+
+        this.checkedOutTo = name;
+        this.isCheckedOut = true;
 
 
     }
 
-    public void checkIn(String name)
-    {
-        checkedOutTo = "";
-        isCheckedOut = false;
+    public void checkIn(String name) {
+        this.checkedOutTo = "";
+        this.isCheckedOut = false;
 
     }
+
     public int getId() {
         return id;
     }
-
-
 
     public String getIsbn() {
         return isbn;
@@ -42,10 +43,6 @@ public class Book {
 
     public void setIsbn(String isbn) {
         this.isbn = isbn;
-    }
-
-    public String getTitle() {
-        return title;
     }
 
     public void setTitle(String title) {
@@ -67,8 +64,6 @@ public class Book {
     public void setCheckedOutTo(String checkedOutTo) {
         this.checkedOutTo = checkedOutTo;
     }
-
-
 
 
 }
