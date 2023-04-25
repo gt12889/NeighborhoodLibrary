@@ -82,7 +82,7 @@ public class Main {
     public static void Menu() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println(" Home Screen");
+        System.out.println(" Home Screen\n--------------------------");
         System.out.println("1) Show Availible Books");
         System.out.println("2) Show Checked out Books");
         System.out.println("3) Exit");
@@ -129,7 +129,8 @@ public class Main {
         int choice = sc.nextInt();
 
         for (int i = 0; i <= counter; i++) {
-            if (books[choice].isCheckcedOut() == false) {
+           // if (books[choice].isCheckcedOut() == false) {
+            if (books[i].getId() == choice && books[i].isCheckcedOut() == false) {
                 books[i].checkOut(name);
                 System.out.println("Success");
                 Menu();

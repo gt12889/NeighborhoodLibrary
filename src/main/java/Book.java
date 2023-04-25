@@ -1,7 +1,7 @@
 public class Book {
 
-    static boolean isCheckedOut;
-    static String checkedOutTo;
+    boolean isCheckedOut;
+    String checkedOutTo;
     int id;
     String isbn;
     String title;
