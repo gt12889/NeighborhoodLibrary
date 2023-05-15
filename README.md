@@ -23,9 +23,9 @@ Users wil have the ability to edit the library database and can perform the foll
 
 ### Interesting Code
 
-I think the simple "if" conditional statement below is interesting since it tests to check for the user's integer input as well as the boolean in one line without using &&.
+I think the simple "if" conditional statement below is interesting since it tests to check for the user's integer input as well as the boolean in one line without using &&. The books array is searched until [choice] was matched with the interval then the isCheckedOut() function is called to check to make sure the book is availible . Other methods with "while" or "do-while" loops could achieve the same goal, but this was the most simple in my opinion.
 
-'''
- if (books[choice].isCheckcedOut() == false) 
- '''
+```java
+ if (books[choice].isCheckedOut() == false) 
+ ```
  
